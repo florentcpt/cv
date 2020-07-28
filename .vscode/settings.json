@@ -1,0 +1,35 @@
+{
+    "latex-workshop.latex.recipes": [
+
+        {
+            "name": "make",
+            "tools": [
+                "make"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+
+        {
+            "name": "make",
+            "command": "make",
+            "args": [],
+            "env": {}
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-output-directory=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        }
+    ],
+    "latex-workshop.latex.outDir": "%DIR%/dist",
+    "latex-workshop.latex.external.build.command": "make",
+    "latex-workshop.latex.recipe.default": "make"
+}

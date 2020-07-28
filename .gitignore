@@ -1,0 +1,6 @@
+/dist
+/*.aux
+/*.log
+/*.out
+/*.pdf
+/*.synctex.gz
