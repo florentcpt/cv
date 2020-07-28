@@ -1,0 +1,39 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8
+%%!TEX language = en_US
+
+\documentclass[11pt, a4paper]{awesome-cv}
+% \usepackage[utf8]{inputenc}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\fontdir[fonts/]
+
+\colorlet{awesome}{awesome-emerald}
+
+\name{Florent}{Captier}
+\position{Agile Team Leader{\enskip\cdotp\enskip}DevOps engineer}
+\address{1 rue Blanche Rose, 95600 Eaubonne, FRANCE}
+
+\photo{photo.jpg}
+\mobile{+33(0)6 80 24 21 26}
+\email{florent@captier.org}
+%\homepage{www.posquit0.com}
+\github{florentcpt}
+\linkedin{fcaptier}
+\twitter{florentcpt}
+
+\begin{document}
+    \makecvheader[L]
+    
+    \makecvfooter
+        {\today}
+        {Florent Captier~~~·~~~Curriculum Vitae}
+        {\thepage}
+    
+    \input{cv_sections/objectives.tex}
+    \input{cv_sections/skills.tex}
+    \input{cv_sections/experience.tex}
+    \input{cv_sections/education.tex}
+
+\end{document}
