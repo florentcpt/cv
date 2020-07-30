@@ -1,0 +1,1 @@
+modules/Awesome-CV/awesome-cv.cls
