@@ -7,6 +7,7 @@ jobs:
       - image: mirisbowring/texlive_ctan_full:2019
     steps:
       - checkout
+      - run: git config --add http.sslverify --type bool 'false for github.com'  
       - run: git submodule sync
       - run: git submodule update --init
       - run:
