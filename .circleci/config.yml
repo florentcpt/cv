@@ -4,7 +4,7 @@ jobs:
   build:
     docker:
       # Primary container
-      - image: mirisbowring/texlive_ctan_full
+      - image: mirisbowring/texlive_ctan_full:2019
     steps:
       - checkout
       - run: git submodule sync
